@@ -29,7 +29,7 @@ function describeBasename(createHistory) {
             expect(location.search).toEqual('')
             expect(location.state).toEqual(null)
             expect(location.action).toEqual(POP)
-            expect(location.basename).toEqual('')
+            expect(location.basename).toEqual('/base/url')
 
             history.pushState({ the: 'state' }, '/home')
           },
@@ -54,7 +54,7 @@ function describeBasename(createHistory) {
             expect(location.search).toEqual('')
             expect(location.state).toEqual(null)
             expect(location.action).toEqual(POP)
-            expect(location.basename).toEqual('')
+            expect(location.basename).toEqual('/base/url')
 
             history.push('/home')
           },
@@ -77,7 +77,7 @@ function describeBasename(createHistory) {
             expect(location.search).toEqual('')
             expect(location.state).toEqual(null)
             expect(location.action).toEqual(POP)
-            expect(location.basename).toEqual('')
+            expect(location.basename).toEqual('/base/url')
 
             history.push({
               pathname: '/home',
@@ -117,7 +117,7 @@ function describeBasename(createHistory) {
             expect(location.search).toEqual('')
             expect(location.state).toEqual(null)
             expect(location.action).toEqual(POP)
-            expect(location.basename).toEqual('')
+            expect(location.basename).toEqual('/base/url')
 
             history.replaceState({ the: 'state' }, '/home')
           },
@@ -142,7 +142,7 @@ function describeBasename(createHistory) {
             expect(location.search).toEqual('')
             expect(location.state).toEqual(null)
             expect(location.action).toEqual(POP)
-            expect(location.basename).toEqual('')
+            expect(location.basename).toEqual('/base/url')
 
             history.replace('/home')
           },
@@ -165,7 +165,7 @@ function describeBasename(createHistory) {
             expect(location.search).toEqual('')
             expect(location.state).toEqual(null)
             expect(location.action).toEqual(POP)
-            expect(location.basename).toEqual('')
+            expect(location.basename).toEqual('/base/url')
 
             history.replace({
               pathname: '/home',
@@ -251,7 +251,7 @@ function describeBasename(createHistory) {
             expect(location.search).toEqual('')
             expect(location.state).toEqual(null)
             expect(location.action).toEqual(POP)
-            expect(location.basename).toEqual('')
+            expect(location.basename).toEqual('/base/url')
 
             history.push({
               pathname: '/home',
